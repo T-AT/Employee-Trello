@@ -1,0 +1,54 @@
+<div class="employees">
+
+    <div class="sideways">
+
+        <app-add-employee (newEmployeeEmitter)="addEmployee($event)">
+
+    </app-add-employee>
+
+    <hr>
+
+    <div class="current-employees">
+
+        <h3>
+            Current Company Employees:
+        </h3>
+
+        <div class="no-data"
+        *ngIf="employeeCount === 0">
+            <p>
+                Currently there are no employees registered on the payroll!
+            </p>
+        </div>
+
+        <!-- Loop through each of the employees -->
+        <div class="employee">
+
+            <app-employee-item
+                *ngFor="let employee of employees; let index = index"
+                [employee]="employee"
+                (deleteEmployeeEmitter)="deleteEmployee(employee)"
+                (toggleEmployeePaidEmitter)="toggleEmployeePaid(employee)">
+            </app-employee-item>
+
+        </div>
+
+    </div>
+
+    </div>
+
+    <hr>
+
+    <div class="footer">
+
+        <p>
+            Copyright &copy; Syuq 2023
+        </p>
+
+        <!-- Link to about page -->
+        <a routerLink="/about">
+            About Us
+        </a>
+
+    </div>
+</div>
