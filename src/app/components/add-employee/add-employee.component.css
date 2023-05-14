@@ -1,0 +1,82 @@
+.add-employee{
+    padding: 1rem;
+}
+
+h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.form-input{
+    width: 80%;
+    margin: 1rem auto;
+}
+
+input{
+    cursor: text;
+    padding: .8rem;
+    display: block;
+    width: 100%;
+    border-radius: 1rem;
+    margin: .5rem 0;
+    font-size: 1rem;
+    color: var(--main-color);
+}
+
+label{
+    margin: 0 .5rem;
+}
+
+input:focus, input:hover{
+    outline: none;
+    transform: scale(1.01);
+    box-shadow: 2px 2px 1rem var(--main-color);
+    transition: all .3s ease-in-out;
+}
+
+input::placeholder{
+    color: var(--main-color);
+}
+
+.bio-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.bio-input .form-input{
+    margin: 0;
+}
+
+.checked{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+input[type="checkbox"]{
+    cursor: pointer;
+    width: 1.3rem;
+    height: 1.3rem;
+    margin: 0 1rem;
+}
+
+input[type="submit"]{
+    cursor: pointer;
+    display: block;
+    background-color: #333;
+    color: white;
+    border-radius: 0;
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type="submit"]:hover{
+    box-shadow: 1px 1px 1rem #f18f01;
+}
