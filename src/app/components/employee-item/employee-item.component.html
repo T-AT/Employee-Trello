@@ -1,0 +1,46 @@
+<div
+ [ngClass]="{ isPaid : employee.isPaid }"
+ (dblclick)="togglePaid(employee)"
+ class="employee-item">
+
+    <h3 class="title">
+        <div class="identity">
+            <span class="employeeId" [ngStyle]="{color: textColor}">{{employee.id}}.</span>
+            {{employee.employeeName}}
+        </div>
+
+        <!-- Add font awesome icon -->
+        <fa-icon (click)="onDeleteEmployee(employee)" [icon]="faTimes"></fa-icon>
+    </h3>
+
+    <div class="bio">
+
+        <div class="age">
+            <h3>Age:</h3>
+            <p [ngStyle]="{'color': textColor}">{{employee.employeeAge}}</p>
+        </div>
+
+        <div class="gender">
+            <h3>Gender</h3>
+            <p [ngStyle]="{'color': textColor}">{{employee.employeeGender ? 'Male' : 'Female'}}</p>
+        </div>
+
+
+    </div>
+
+    <div class="details">
+
+        <h3>Email:</h3>
+        <a href="mailto:{{employee.employeeEmail}}" [ngStyle]="{color: textColor}">{{employee.employeeEmail}}</a>
+
+    </div>
+
+    <div class="details">
+
+        <h3>Position:</h3>
+        <p [ngStyle]="{color: textColor}">{{employee.employeePosition}}</p>
+
+    </div>
+
+
+</div>
