@@ -1,0 +1,12 @@
+<!-- Header and Button -->
+<header class="header">
+
+    <h1> {{ appTitle.toUpperCase() }}</h1>
+
+    <app-button
+    *ngIf="toggleRoute('/')"
+    btnColor="{{ showAddEmployeeForm ? 'red' : 'green' }}" 
+    btnText="{{ showAddEmployeeForm ? 'Close Form' : 'Add Employee' }}" 
+    (addEmployeeBtnEmitter) = "toggleAddEmployeeForm()"></app-button>
+
+</header>
