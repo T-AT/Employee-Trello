@@ -1,0 +1,40 @@
+/* Import Poppins and love ya like a sister */
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Poppins:wght@400;700&display=swap');
+
+/* Variables */
+:root{
+    --main-color: steelblue;
+    /* --main-color: #f18f01; */
+}
+
+/* Global Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.container{
+    border: 2px solid steelblue;
+    margin: 10px;
+    border-radius: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    transform: scale(1.05);
+    transition: transform .3s ease-in-out;
+    color: var(--main-color);
+}

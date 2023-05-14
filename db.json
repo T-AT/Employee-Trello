@@ -1,0 +1,31 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "employeeName": "Quys",
+      "employeeAge": 21,
+      "employeeGender": "SEX.MALE",
+      "employeeEmail": "dracu1st@gmail.com",
+      "employeePosition": "Junior Developer",
+      "isPaid": true
+    },
+    {
+      "id": 3,
+      "employeeName": "Syuq",
+      "employeeAge": 38,
+      "employeeGender": "SEX.MALE",
+      "employeeEmail": "tatd.wine@gmail.com",
+      "employeePosition": "Company CEO",
+      "isPaid": false
+    },
+    {
+      "id": 4,
+      "employeeName": "Daof",
+      "employeeAge": 24,
+      "employeeGender": "SEX.FEMALE",
+      "employeeEmail": "daof@gmail.com",
+      "employeePosition": "Janitor",
+      "isPaid": true
+    }
+  ]
+}
