@@ -1,0 +1,33 @@
+.about{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+img{
+    width: 10rem;
+    aspect-ratio: 1/1;
+}
+
+h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+p{
+    padding: 1rem 3rem;
+    text-align: center;
+}
+
+a{
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+fa-icon{
+    margin: 0 1rem;
+}
